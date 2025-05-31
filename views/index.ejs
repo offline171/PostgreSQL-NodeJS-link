@@ -1,0 +1,17 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= title %></h1>
+  <!-- In views/index.ejs -->
+  <ul>
+    <% users.forEach(function(user) { %>
+      <li><%= user.firstName %></li>
+    <% }); %>
+  </ul>
+  <a href="/new">Create a user</a>
+</body>
+</html>
